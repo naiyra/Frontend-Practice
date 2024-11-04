@@ -1,52 +1,12 @@
-const progress = document.getElementById('progress')
-const next = document.getElementById('next')
-const prev = document.getElementById('prev')
-const circles = document.querySelectorAll('.circle')
+const left= document.querySelector('.left')
+const right= document.querySelector('.right')
+const container=document.querySelector('.container')
 
-let currentActive = 1
+left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
 
-next.addEventListener('click', () =>{
-    currentActive++
-    if(currentActive>circles.length){
-        currentActive=circles.length
-    }
-    update()
-})
+left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
 
-prev.addEventListener('click', () =>{
-    currentActive--
-    if(currentActive<1){
-        currentActive=1
-    }
+right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
 
-    update()
-})
+right.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
 
-function update(){
-    circles.forEach((circle, idx)=>{
-        if(idx<currentActive)
-        {
-            circle.classList.add('active')
-        }
-        else {
-            circle.classList.remove('active')
-        }
-    })
-
-    const actives = document.querySelectorAll('.active')
-    progress.style.width=(actives.length-1)/(circles.length-1)*100 +'%'
-
-    if(currentActive===1)
-    {
-        prev.disabled=true;
-    }
-    else if(currentActive=== circles.length)
-    {
-        next.disabled=true;
-    }
-    else{
-        prev.disabled=false;
-        next.disabled=false
-    }
-
-}

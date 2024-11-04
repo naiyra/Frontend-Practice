@@ -9,7 +9,44 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
 
+.btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
+    border: white solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+
+}
+
+.split.left .btn:hover{
+    background-color: #212b83 ;
+    border-color: #212b83 ;
+}
+
+.split.right .btn:hover{
+    background-color:#2a2a2a ;
+    border-color: #2a2a2a ;
+}
 .container {
     position: relative;
     width: 100%;
@@ -18,3 +55,71 @@ body {
 }
 
 
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background: url('images/PS5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #212b83;
+    opacity: 50%;
+
+}
+
+.split.right {
+    right: 0;
+    background: url('images/xbox.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.split.right::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2a2a2a;
+    opacity: 50%;
+
+}
+.hover-left .left{
+   width: 75%; 
+   transition: 1000ms ease-in-out;;
+}
+.hover-left .right{
+    width: 25%; 
+    transition: 1000ms ease-in-out;
+ }
+ .hover-right .right{
+    width: 75%; 
+    transition: 1000ms ease-in-out;;
+ }
+ .hover-right .left{
+     width: 25%; 
+     transition: 1000ms ease-in-out;;
+     
+  }
+
+  @media(max-width: 800px){
+    h1{
+        font-size: 2rem;
+        top: 10%;
+
+    }
+    .btn{
+        padding: 1.2rem;
+        width: 12rem;
+    }
+  }
