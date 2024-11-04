@@ -1,60 +1,15 @@
-# Project Title
+# Javascript Practice
 
-A short description about the project and/or client.
+## Project 1: Progress Steps
+![image (25)](https://github.com/user-attachments/assets/ae7fdb1e-27ae-418f-85c8-4e5f0ca85e6c)
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Project 2: Expanding Cards
+![image (24)](https://github.com/user-attachments/assets/616f4a79-f17a-446b-bad3-ca672af820ea)
 
-### Prerequisites
 
-The things you need before installing the software.
+## Project 3: Split Landing Page
+![image](https://github.com/user-attachments/assets/b0489704-75c4-4070-b601-7880dcd6651a)
+![image](https://github.com/user-attachments/assets/86e3deed-935c-454b-88e9-91d51ba39e8a)
 
-* You need this
-* And you need this
-* Oh, and don't forget this
-
-### Installation
-
-A step by step guide that will tell you how to get the development environment up and running.
-
-```
-$ First step
-$ Another step
-$ Final step
-```
-
-## Usage
-
-A few examples of useful commands and/or tasks.
-
-```
-$ First example
-$ Second example
-$ And keep this in mind
-```
-
-## Deployment
-
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
-
-### Server
-
-* Live:
-* Release:
-* Development:
-
-### Branches
-
-* Master:
-* Feature:
-* Bugfix:
-* etc...
-
-## Additional Documentation and Acknowledgments
-
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
-
+## Project 4: Form Wave Animation
