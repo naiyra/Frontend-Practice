@@ -1,125 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 
-
+*{
+    box-sizing: border-box;
+}
 body {
-    font-family: 'Roboto', sans-serif;
+    background-color: steelblue;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     overflow: hidden;
     margin: 0;
 }
 
-h1 {
-    font-size: 4rem;
-    color: white;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+.container{
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
 }
 
-.btn{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 50%;
-    top: 40%;
-    transform: translateX(-50%);
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a{
     text-decoration: none;
-    color: white;
-    border: white solid 0.2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 15rem;
-    padding: 1.5rem;
+    color: lightblue;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+
+.text{
+    margin-top: 30px;
 
 }
 
-.split.left .btn:hover{
-    background-color: #212b83 ;
-    border-color: #212b83 ;
-}
-
-.split.right .btn:hover{
-    background-color:#2a2a2a ;
-    border-color: #2a2a2a ;
-}
-.container {
+.form-control {
     position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+
+}
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px white solid;
+    display: block;
     width: 100%;
-    height: 100%;
-    background: #333;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
 }
 
+.form-control input:focus,
+ .form-control input:valid{
+    outline: 0;
+    border-bottom-color: lightblue ;
+}
 
-.split {
+.form-control label{
     position: absolute;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.split.left {
+    top: 15px;
     left: 0;
-    background: url('images/PS5.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
-.split.left::before {
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #212b83;
-    opacity: 50%;
-
+.form-control label span{ 
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.split.right {
-    right: 0;
-    background: url('images/xbox.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.form-control input:focus + label span,
+.form-control input:valid + label span
+{
+    color: lightblue ;
+    transform: translateY(-30px);
 }
-.split.right::before {
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #2a2a2a;
-    opacity: 50%;
-
-}
-.hover-left .left{
-   width: 75%; 
-   transition: 1000ms ease-in-out;;
-}
-.hover-left .right{
-    width: 25%; 
-    transition: 1000ms ease-in-out;
- }
- .hover-right .right{
-    width: 75%; 
-    transition: 1000ms ease-in-out;;
- }
- .hover-right .left{
-     width: 25%; 
-     transition: 1000ms ease-in-out;;
-     
-  }
-
-  @media(max-width: 800px){
-    h1{
-        font-size: 2rem;
-        top: 10%;
-
-    }
-    .btn{
-        padding: 1.2rem;
-        width: 12rem;
-    }
-  }

@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
     <link rel="stylesheet" href="style.css"/>
-    <title>Split Landing Page</title>
+    <title>Form Input Wave</title>
 </head>
 <body>
     <div class="container">
-        <div class="split left">
-            <h1>Playstation 5</h1>
-            <a href="#" class="btn">Buy Now</a>
-        </div>
-        <div class="split right">
-            <h1>XBOX Series X</h1>
-            <a href="#" class="btn">Buy Now</a>
-        </div>
+        <h1>Please Login</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email</label>
+                <!--<label>
+                    <span style="transition-delay:0ms">E</span>
+                    <span style="transition-delay:50ms">M</span>
+                    <span style="transition-delay:100ms">A</span>
+                    <span style="transition-delay:150ms">I</span>
+                    <span style="transition-delay:200ms">L</span>
+                </label>-->
+            </div>
+
+            <div class="form-control">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <button class="btn">Login</button>
+            <p class="text">Don't Have an account?
+                 <a href="#">Register</a>
+            </p>
+            
+        </form>
     </div>
    
     <script src="script.js"></script>
